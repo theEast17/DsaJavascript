@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   p + p {
+	color: blue;
+}
+
+    </style>
+</head>
+<body>
+    
+<h2>Title</h2>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
+
+<div class=”box”>
+	<p>Paragraph example.</p>
+	<p>Paragraph example.</p>
+</div>
+   
+   
+</body>
+</html>
+<script>
+    let array=[1,2,5,42,2,12,3];
+    let newElement=50
+    let position=2
+    // traversing on array
+    // for(let i=0;i<array.length;i++){
+    //     console.log(array[i])
+    // }
+
+    // Insert into array
+    for(let i=0;i<array.length;i++){
+        if(i===position){
+            array[i]=newElement
+            console.log(array)
+        }
+    }
+</script>
