@@ -17,4 +17,4 @@ const arrayChunk = (array, devider) => {
     return chunkArray
 }
 
-console.log(arrayChunk([1, 2, 3, 4, 5, 6,7,8], 10))
+console.log(arrayChunk([1, 2, 3, 4, 5, 6, 7, 8], 10))
