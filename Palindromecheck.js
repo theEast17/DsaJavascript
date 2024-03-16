@@ -3,7 +3,7 @@
 // dog === false
 const Palindromecheck = (str) => {
     const reverse=str.split('').reverse().join('')
-    return reverse === str
+    return reverse === str;
 }
 
 

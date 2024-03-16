@@ -7,7 +7,7 @@
 // 1st
 function reverse(n) {
    const reversed=n.toString().split('').reverse().join('')
-   return parseInt(reversed) * Math.sign(n)     //if number is -10 -> -1 , 10 -> 1
+   return parseInt(reversed) * Math.sign(n);     //if number is -10 -> -1 , 10 -> 1
 }
 
 console.log(reverse(-21))

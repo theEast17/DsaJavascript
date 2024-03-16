@@ -9,7 +9,7 @@
 // }
 
 function reverse(str) {
-    let string = ''
+    let string = '';
     // 2nd
     // for (let i = 0; i < str.length; i++) {
     //     string = string + str[(str.length - i) - 1]
