@@ -1,39 +1,42 @@
 function matrix(n) {
     const result = []
-    let counter=1, startRow=0, endRow=n-1, startCol=0, endCol=n-1
     for(let i=0; i<n; i++){
       result.push([])
     }
   
+    let counter=1,startRow=0,endRow=n-1,startCol=0,endCol=n-1
+
+    
     while(startRow<=endRow && startCol<=endCol){
-      //Top
-    for(let i=startCol; i<=endCol; i++){
-      result[startRow][i] = counter
-      counter++
+        for(let i=startRow;i<=endCol;i++){
+            result[startRow][i]=counter
+            counter++
+        }
+        startRow++
+    
+        for(let i=startRow;i<=endRow;i++){
+            result[i][endRow]=counter
+            counter++
+        }
+    
+        endRow-- 
+    
+        for(let i=endRow;i>=startCol;i--){
+           result[endCol][i]=counter
+           counter++
+        }
+    
+        endCol--  //4
+    
+        for(let i=endCol;i>=startRow;i--){
+            result[i][startCol]=counter
+            counter++
+        }
+        startCol++    
+
+        console.log(startRow,endRow,startCol,endCol)
     }
-    startRow++
-  
-    //Right
-    for(let i=startRow; i<=endRow; i++){
-      result[i][endCol] = counter
-      counter++
-    }
-    endCol--
-  
-    //Bottom
-    for(let i=endCol; i>=startCol; i--){
-      result[endRow][i] = counter
-      counter++
-    }
-    endRow--
-    //Left
-    for(let i=endRow; i>=startRow; i--){
-      result[i][startCol] = counter
-      counter++
-    }
-    startCol++
-    }
-  
+   
     return result
   }
   
