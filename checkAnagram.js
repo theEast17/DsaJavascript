@@ -29,9 +29,9 @@ const checkAnagram = (str1, str2) => {
     let string1 = charMap(str1)
     let string2 = charMap(str2)
 
+    // this line of code only for 35 line 
     let str1Keys = Object.keys(string1)  
     let str2Keys = Object.keys(string2)
-
     if(str1Keys.length !== str2Keys.length){
         return false
     }
