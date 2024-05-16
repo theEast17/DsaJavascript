@@ -25,18 +25,10 @@ const stockPrediction = (stocks) => {
     for(let i=1;i<stocks.length;i++){
         if(stocks[i]<min){
             min=stocks[i]
-        }else{
-            if(stocks[i]-min > maxProfit){
-                maxProfit=stocks[i]-min
-            }
+        }else if(stocks[i]>min && stocks[i]-min>maxProfit){
+            maxProfit=stocks[i]-min
         }
     }
     return maxProfit
-
-
 }
-
-
-console.time('number')
 console.log(stockPrediction([10, 7, 5, 8, 11, 9]))
-console.timeEnd('number')

@@ -8,36 +8,41 @@ function matrix(n) {
 
     
     while(startRow<=endRow && startCol<=endCol){
-        for(let i=startRow;i<=endCol;i++){
+
+        // top
+        for(let i=startCol;i<=endCol;i++){
             result[startRow][i]=counter
             counter++
         }
         startRow++
     
+        // right 
         for(let i=startRow;i<=endRow;i++){
-            result[i][endRow]=counter
+            result[i][endCol]=counter
             counter++
         }
     
-        endRow-- 
+        endCol--   
     
-        for(let i=endRow;i>=startCol;i--){
-           result[endCol][i]=counter
+    
+        // bottom  
+        for(let i=endCol;i>=startCol;i--){
+           result[endRow][i]=counter
            counter++
         }
     
-        endCol--  //4
+        endRow--  //4
     
-        for(let i=endCol;i>=startRow;i--){
+        // end
+        for(let i=endRow;i>=startRow;i--){
             result[i][startCol]=counter
             counter++
         }
         startCol++    
 
-        console.log(startRow,endRow,startCol,endCol)
     }
    
     return result
   }
   
-  console.log(matrix(6));
+  console.log(matrix(5));

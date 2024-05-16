@@ -6,6 +6,7 @@ const rotateArray = (arr, value) => {
 
     //  in this current array is not changed  2nd
     // const cutArray=arr.slice(-value)
+    // console.log(cutArray)
     // return cutArray.concat(arr.slice(0,arr.length-value))
 
 
@@ -30,4 +31,4 @@ const rotateArray = (arr, value) => {
 }
 
 
-console.log(rotateArray([1, 2, 3, 4, 5], 3))
+console.log(rotateArray([1, 2, 3, 4, 5], 4))

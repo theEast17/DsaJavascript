@@ -5,26 +5,10 @@ const twoSum = (arr, target) => {
     //     for(let j=i+1;j<arr.length;j++){
     //         if(arr[i]+arr[j]===target){
     //             ans.push(i,j)
-    //         }else{
-    //             continue;
     //         }
     //     }
     // }
-    // return `[${ans[0]},${ans[1]}]`
-
-    // 2nd
-    // let found=false
-    // for(let i=0;i<arr.length;i++){
-    //     for(let j=i+1;j<arr.length;j++){
-    //         if(arr[i]+arr[j]===target){
-    //             found=true;
-    //             return [i,j]
-    //         }
-    //     }
-    // }
-    // if(!found){
-    //     return false
-    // }
+    // return ans
 
     // 3rd
         const obj = {};

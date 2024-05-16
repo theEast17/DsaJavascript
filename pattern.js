@@ -7,6 +7,21 @@ const Pattern = (n) => {
     //     console.log(star)
     // }
 
+
+    // for(let i=1;i<=n;i++){
+    //     let star=''
+    //     for(j=1;j<=n-i;j++){
+    //         star+=' '
+    //     }
+    //     for(let k=1;k<=i;k++){
+    //         star+='*'
+    //     }
+    //     console.log(star)
+    // }
+
+            // or
+
+
     // for(let i=1;i<=n;i++){
     //     let star=''
     //     for(j=1;j<=n;j++){
@@ -27,16 +42,28 @@ const Pattern = (n) => {
     //     console.log(star)
     // }
 
-    // for (let i = 1; i <= n; i++) {
-    //     let pattern = '';
-    //     for (let j = 1; j <= i; j++) {
-    //         pattern += ' ';
+            // or
+
+
+    // for(let i=n;i>=1;i--){
+    //     let star=''
+    //     for(let j=1;j<=i;j++){
+    //         star+='*'
     //     }
-    //     for (let k = i; k <= n; k++) {
-    //         pattern += '*';
-    //     }
-    //     console.log(pattern);
+    //     console.log(star)
     // }
+
+
+    for(let i=n;i>=1;i--){
+        let star=''
+        for(let j=1;j<=n-i;j++){
+            star+=' '
+        }
+        for(let k=1;k<=i;k++){
+            star+='*'
+        }
+        console.log(star)
+    }
 
 }
 

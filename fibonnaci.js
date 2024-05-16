@@ -22,7 +22,14 @@ let fibonacci = (number) => {
 
     // fibonacci using recursion
 
-    return number <= 1 ? number : fibonacci(number - 1) + fibonacci(number - 2)
+    // return number <= 1 ? number : fibonacci(number - 1) + fibonacci(number - 2)
+
+    let arr=[0,1]
+    for(let i=2;i<=number;i++){
+        arr[i]=arr[i-1]+arr[i-2]
+    }
+    return arr.at(-1) || arr
+
 
 }
 
