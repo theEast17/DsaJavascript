@@ -6,6 +6,5 @@ const Palindromecheck = (str) => {
     return reverse === str;
 }
 
-
 console.log(Palindromecheck('madam'))
 
