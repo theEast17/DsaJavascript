@@ -6,6 +6,7 @@
 
 const maxChar = (str) => {
     const removeSpaceString=str.replace(/\s/g, '');
+    // return removeSpaceString
     const charMap = {}
     let count = 0
     let maxChar = ''
@@ -18,6 +19,8 @@ const maxChar = (str) => {
             charMap[char] = 1
         }
     }
+
+    console.log(charMap)
 
     for (let key in charMap) {
         if (charMap[key] > count) {
